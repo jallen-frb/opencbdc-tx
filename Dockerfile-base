@@ -1,13 +1,13 @@
 # Define image base arg
 ARG IMAGE_VERSION="ubuntu:20.04"
 
-# Create Base image
+# Create base image
 FROM $IMAGE_VERSION AS base
 
-# set non-interactive shell
+# Set non-interactive shell
 ENV DEBIAN_FRONTEND noninteractive
 
-# install base packages
+# Install base packages
 RUN apt update \
     && apt -y --quiet install \
     build-essential \
