@@ -4,7 +4,6 @@ ARG IMAGE_VERSION="ubuntu:20.04"
 # Create Base image
 FROM $IMAGE_VERSION AS base
 
-
 # set non-interactive shell
 ENV DEBIAN_FRONTEND noninteractive
 
