@@ -4,6 +4,9 @@ ARG IMAGE_VERSION="ubuntu:20.04"
 # Define base image repo name
 ARG BASE_IMAGE="ghcr.io/jallen-frb/opencbdc-tx-base:latest"
 
+# TODO: Swap to this base url on merge to MIT DCI
+# ARG BASE_IMAGE="ghcr.io/mit-dci/opencbdc-tx-base:latest"
+
 # Create Base Image
 FROM $IMAGE_VERSION AS base
 
