@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('blocking__queue_8hpp.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">blocking_queue.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -173,14 +174,23 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcbdc_1_1blocking__queue.html">cbdc::blocking_queue&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe producer-consumer FIFO queue supporting multiple concurrent producers and consumers.  <a href="classcbdc_1_1blocking__queue.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcbdc_1_1blocking__queue__internal.html">cbdc::blocking_queue_internal&lt; T, Q &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe producer-consumer FIFO queue supporting multiple concurrent producers and consumers.  <a href="classcbdc_1_1blocking__queue__internal.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacecbdc"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecbdc.html">cbdc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a380d8032a47b5d83e1eb2c85195d628d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a380d8032a47b5d83e1eb2c85195d628d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecbdc.html#a380d8032a47b5d83e1eb2c85195d628d">cbdc::blocking_queue</a> = blocking_queue_internal&lt; T, std::queue&lt; T &gt; &gt;</td></tr>
+<tr class="separator:a380d8032a47b5d83e1eb2c85195d628d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6432d7712ae2a44ab8354e52203e0507"><td class="memTemplParams" colspan="2">template&lt;typename T , typename C  = std::less&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:a6432d7712ae2a44ab8354e52203e0507"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecbdc.html#a6432d7712ae2a44ab8354e52203e0507">cbdc::blocking_priority_queue</a> = blocking_queue_internal&lt; T, std::priority_queue&lt; T, std::vector&lt; T &gt;, C &gt; &gt;</td></tr>
+<tr class="separator:a6432d7712ae2a44ab8354e52203e0507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

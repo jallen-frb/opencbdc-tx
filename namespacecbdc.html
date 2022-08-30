@@ -136,8 +136,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcbdc_1_1atomizer__client.html">atomizer_client</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Client for interacting with the atomizer architecture.  <a href="classcbdc_1_1atomizer__client.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcbdc_1_1blocking__queue.html">blocking_queue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe producer-consumer FIFO queue supporting multiple concurrent producers and consumers.  <a href="classcbdc_1_1blocking__queue.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcbdc_1_1blocking__queue__internal.html">blocking_queue_internal</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe producer-consumer FIFO queue supporting multiple concurrent producers and consumers.  <a href="classcbdc_1_1blocking__queue__internal.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcbdc_1_1buffer.html">buffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer to store and retrieve byte data.  <a href="classcbdc_1_1buffer.html#details">More...</a><br /></td></tr>
@@ -181,6 +181,12 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a380d8032a47b5d83e1eb2c85195d628d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a380d8032a47b5d83e1eb2c85195d628d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecbdc.html#a380d8032a47b5d83e1eb2c85195d628d">blocking_queue</a> = <a class="el" href="classcbdc_1_1blocking__queue__internal.html">blocking_queue_internal</a>&lt; T, std::queue&lt; T &gt; &gt;</td></tr>
+<tr class="separator:a380d8032a47b5d83e1eb2c85195d628d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6432d7712ae2a44ab8354e52203e0507"><td class="memTemplParams" colspan="2">template&lt;typename T , typename C  = std::less&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:a6432d7712ae2a44ab8354e52203e0507"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecbdc.html#a6432d7712ae2a44ab8354e52203e0507">blocking_priority_queue</a> = <a class="el" href="classcbdc_1_1blocking__queue__internal.html">blocking_queue_internal</a>&lt; T, std::priority_queue&lt; T, std::vector&lt; T &gt;, C &gt; &gt;</td></tr>
+<tr class="separator:a6432d7712ae2a44ab8354e52203e0507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae259dc3000a4487dd87a2ee9662ba73e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecbdc.html#ae259dc3000a4487dd87a2ee9662ba73e">hash_t</a> = std::array&lt; unsigned char, cbdc::hash_size &gt;</td></tr>
 <tr class="memdesc:ae259dc3000a4487dd87a2ee9662ba73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA256 hash container.  <a href="namespacecbdc.html#ae259dc3000a4487dd87a2ee9662ba73e">More...</a><br /></td></tr>
 <tr class="separator:ae259dc3000a4487dd87a2ee9662ba73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -500,6 +506,42 @@ Functions</h2></td></tr>
 <tr class="separator:a2d6e325d6c7e6f60748cc066a79aa3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a6432d7712ae2a44ab8354e52203e0507" name="a6432d7712ae2a44ab8354e52203e0507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6432d7712ae2a44ab8354e52203e0507">&#9670;&#160;</a></span>blocking_priority_queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename C  = std::less&lt;T&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacecbdc.html#a6432d7712ae2a44ab8354e52203e0507">cbdc::blocking_priority_queue</a> = typedef <a class="el" href="classcbdc_1_1blocking__queue__internal.html">blocking_queue_internal</a>&lt;T, std::priority_queue&lt;T, std::vector&lt;T&gt;, C&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="blocking__queue_8hpp_source.html#l00123">123</a> of file <a class="el" href="blocking__queue_8hpp_source.html">blocking_queue.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a380d8032a47b5d83e1eb2c85195d628d" name="a380d8032a47b5d83e1eb2c85195d628d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a380d8032a47b5d83e1eb2c85195d628d">&#9670;&#160;</a></span>blocking_queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacecbdc.html#a380d8032a47b5d83e1eb2c85195d628d">cbdc::blocking_queue</a> = typedef <a class="el" href="classcbdc_1_1blocking__queue__internal.html">blocking_queue_internal</a>&lt;T, std::queue&lt;T&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="blocking__queue_8hpp_source.html#l00120">120</a> of file <a class="el" href="blocking__queue_8hpp_source.html">blocking_queue.hpp</a>.</p>
+
+</div>
+</div>
 <a id="ae259dc3000a4487dd87a2ee9662ba73e" name="ae259dc3000a4487dd87a2ee9662ba73e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae259dc3000a4487dd87a2ee9662ba73e">&#9670;&#160;</a></span>hash_t</h2>
 

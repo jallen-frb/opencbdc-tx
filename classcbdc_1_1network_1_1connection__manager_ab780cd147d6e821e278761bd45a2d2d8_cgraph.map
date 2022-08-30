@@ -4,5 +4,4 @@
 <area shape="rect" id="node4" href="$classcbdc_1_1network_1_1connection__manager.html#ab745bed38e090ede29253f326ddac684" title="Sends the provided data to the specified peer." alt="" coords="225,55,396,95"/>
 <area shape="rect" id="node3" href="$namespacecbdc.html#a4dd685b58c8cf66f4489ab808915ab85" title="Calculates the serialized size in bytes of the given object when serialized using serializer." alt="" coords="445,5,585,31"/>
 <area shape="rect" id="node5" href="$classcbdc_1_1network_1_1peer.html#aafc3206ef9e0a7aa9cc85dc3b6d3948c" title="Sends buffered data." alt="" coords="449,55,582,95"/>
-<area shape="rect" id="node6" href="$classcbdc_1_1blocking__queue.html#a545725ae9c7b4643d91d690b05d9d2f0" title="Pushes an element onto the queue and notifies at most one waiting consumer." alt="" coords="633,55,780,95"/>
 </map>
